@@ -8,18 +8,37 @@
 <img id="aaa" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-trai-bong-da-png-452.webp" alt="" style="width: 100px;">
 <br>
 <p>Click button below to move the image to right</p>
-<button onclick="moveR()">Click me</button>
+<button onclick="moveR()">Right</button>
+<button onclick="moveL()">left</button>
+<button onclick="moveD()">Down</button>
+<button onclick="moveU()">Up</button>
 <script>
     let myImage = document.getElementById('aaa');
+    init()
     function init(){
         myImage.style.position='relative';
         myImage.style.left= 0+ 'px';
     }
-    init();
     function moveR(){
         myImage.style.left= parseInt(myImage.style.left) + 20 + 'px';
 
     }
+    function moveL(){
+        myImage.style.left= parseInt(myImage.style.left) - 20 + 'px';
+
+    }
+    init1()
+    function init1(){
+        myImage.style.position='relative';
+        myImage.style.top= 0+ 'px';
+    }function moveD() {
+        myImage.style.top = parseInt(myImage.style.top) + 20 + 'px';
+    }
+    function moveU() {
+        myImage.style.top = parseInt(myImage.style.top) - 20 + 'px';
+    }
+
+
 </script>
 <!--<form>-->
 <!--    <img id="myImage" src="https://thuviendohoa.vn/upload/images/items/hinh-anh-trai-bong-da-png-452.webp" />-->
